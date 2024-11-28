@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.specialHeading {
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: 1.5px 1.5px 10px black;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+nav {
+  height: 60px;
+  position: fixed;
+  top: 0;
+}
+#firstPage {
+  background-image: url("./images/bg7.jpg");
+  background-size: contain;
+  color: rgb(117, 149, 255);
+  height: 100vh;
+}
+.special-text {
+  background-color: rgb(117, 149, 255, 0.5);
+  color: #ffffff;
+  padding: 0 2px;
+  font-weight: bold;
+}
+#top {
+  display: flexbox;
+  width: 100vw;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+#logo {
+  height: 40px;
+  display: inline-block;
+}
+#topLogo {
+  float: left;
+  margin: 7px 0 0 20px;
+}
+#logo-text {
+  font-family: serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: white;
+  visibility: hidden;
+  transition: visibility 1s ease;
+}
+@keyframes textSlideAppear {
+  from {
+    visibility: hidden;
+    position: relative;
+    left: -30px;
+  }
+  to {
+    visibility: visible;
+    position: relative;
+    left: 0px;
+  }
+}
+#topNavbar {
+  padding: 20px 30px 0 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  float: right;
+}
+#topNavbar ul li {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+#topNavbar ul li a {
+  margin: 0 5px;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: solid 1.5px blue;
+}
+#topNavbar ul li a:hover {
+  background-color: blue;
+  font-size: 25px;
+  transition: background-color 0.3s 0.3s, font-size 0.3s 0.3s;
+}
+#intro {
+  padding-top: 60px;
+  font-family: sans-serif;
+  display: flex;
+}
+#intro-main {
+  width: 60vw;
+  display: flex;
+  padding: 30px;
+}
+#introDp {
+  width: 40vw;
+  height: 300px;
+}
+#introDp img {
+  height: 450px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 60px 100px 0 0;
+}
+#introText {
+  border-left: solid 30px rgba(255, 255, 255, 0.2);
+  padding-left: 20px;
+  margin: 30px 0 0 50px;
+  width: 45vw;
+}
+
+#introText1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+#introText2 {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 80px;
+  margin-bottom: 10px;
+  -webkit-text-stroke: #ffffff 0.5px;
+}
+#introText3 {
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+#introText4 {
+  font-size: 20px;
+  line-height: 23px;
+}
+#intro-btn-ctn {
+  width: 80%;
+  text-align: center;
+}
+#intro-btn {
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #ffffff;
+  margin: auto;
+}
+#introBtn:hover {
+  transition: zoomText 2s;
+}
+@keyframes zoomText {
+  from {
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+  to {
+    font-size: 22px;
+    background-color: rgb(117, 149, 255, 1);
+  }
+}
+.portfolioSpace .portfolioItem img,
+iframe {
+  height: 250px;
+  width: 50%;
+  float: left;
+  display: inline;
+  border-right: solid 2px blue;
+}
+.portfolioSpace .portfolioItem {
+  height: 250px;
+  width: 40vw;
+  background-color: white;
+  border: solid 5px blue;
+  border-width: 5px 0;
+  margin: 30px auto;
+}
+.portfolioSpace {
+  width: 50vw;
+}
+#lower_part {
+  background-image: url(./images/bg2.jpg);
+  background-size: cover;
+  background-position: 0 -150px;
+}
+#my_skills {
+  height: 1000px;
+  width: 80vw;
+  margin: auto;
+}
+#my_skills h1 {
+  height: 100px;
+  line-height: 100px;
+  border-radius: 40px;
+  text-align: center;
+  margin: 20px 0;
+  background-color: blue;
+  color: white;
+}
+.skillsList li {
+  margin: 40px 2vw;
+  border: solid 3px white;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  height: 200px;
+  float: left;
+  width: 300px;
+  box-sizing: border-box;
+}
+.skillsList li:hover {
+  background-color: blue;
+  transition: 3s ease;
+}
+.skillsList h2 {
+  background-color: blue;
+  color: white;
+  height: 80px;
+  width: 220px;
+  position: relative;
+  top: -40px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: solid 3px white;
+  border-radius: 20px;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.skillsList p {
+  margin: -30px 10px 0 10px;
+  font-size: 20px;
+}
+.line1 {
+  padding: 20px 0;
+}
+.line2 {
+  padding: 5px 0;
+}
+
+#contactInfo {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+}
+#sm_contacts {
+  margin: 40px 0 0 80px;
+  padding: 20px;
+  line-height: 25px;
+  border-radius: 10px;
+  float: left;
+  font-size: 20px;
+  background-color: #ffffff;
+  height: 400px;
+  width: 50%;
+  box-sizing: border-box;
+}
+#sm_contacts h1 {
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+#sm_intro1 {
+  margin-top: 10px;
+}
+#sm_intro2 {
+  margin-top: 30px;
+}
+#form-ctn {
+  float: left;
+  width: 380px;
+  color: #ffffff;
+  border: solid 1px white;
+  border-radius: 10px;
+  margin: 40px 0 0 100px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+#email-form {
+  margin: 10px auto;
+  width: 350px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+#email-form h2 {
+  line-height: 50px;
+}
+hr {
+  margin-bottom: 10px;
+}
+#mail-icon {
+  height: 50px;
+  margin-left: 60px;
+}
+#email-form input[type="submit"] {
+  margin: auto;
+  height: 40px;
+  width: 350px;
+  background-color: rgb(0, 0, 255);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#email-form input[type="text"] {
+  height: 40px;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 6px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+#email-form div textarea {
+  height: 80px;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  border: solid 1px #ffffff;
+  border-radius: 6px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+footer {
+  background-color: #dddddd;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
